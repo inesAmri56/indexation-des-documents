@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>Recherche de documents</title>
+<style>
+    /* Style pour le conteneur du formulaire */
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 10%;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px 50px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    
+    }
+  
+    /* Style pour les labels */
+    label {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+  
+    /* Style pour les champs de saisie */
+    input[type="text"], input[type="text"], textarea {
+      width: 50%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      font-size: 16px;
+      margin-left: 25%;
+    
+    }
+  button:hover{
+    background-color: rgb(0, 102, 255);
+    color: #f2f2f2;
+  } 
+  button{
+    font-size: 20;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+  }
+    /* Style pour le bouton d'envoi */
+   
+    /* Style pour le bouton d'envoi lorsqu'il est survolé */
+    input[type="submit"]:hover {
+      background-color: blue;
+    }
+
+    /* Style pour les résultats de la recherche */
+    .search-results {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+      
+      
+    }
+
+    /* Style pour les titres des résultats */
+    .result-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Style pour les chemins des résultats */
+    .result-path {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    /* Style pour les mots-clés des résultats */
+    .result-keywords {
+      font-size: 14px;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    body{
+      
+     background-image: url("imgRech.png");
+     background-size:cover;  
+    }
+  h1{
+    color:beige;
+  }
+
+  </style>
+</head>
+<body>
+  <form method="POST" action="recherche2.php">
+    <center>
+    <label for="mot"><h1>RECHERCHE</h1></label>
+  </center>
+    <input type="text" name="mot" id="mot">
+    <button type="submit">Recherche</button>
+
+    </form>
+  </div>
+
+

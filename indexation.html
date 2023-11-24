@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>Indexation de documents</title>
+<style>
+    /* Style pour le conteneur du formulaire */
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 10%;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    
+    }
+  
+    /* Style pour les labels */
+    label {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    /* Style pour les champs de saisie */
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+  
+    /* Style pour le bouton d'envoi */
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    body{
+      
+     background-image: url("image5.jpg");
+     background-size: cover;
+    
+    }
+  
+    /* Style pour le bouton d'envoi lorsqu'il est survolé */
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form action="indexation.php" method="POST" enctype="multipart/form-data >
+      <label for="monfichier"> Document:</label>
+      <input type="file" id="monfichier" name="monfichier">
+  
+      <label for="title"> Titre :</label>
+           <input type="text" id="title" name="title">
+  
+      <label for="mot"> Mots clé :</label>
+      <input type="text" id="mot" name="mot">
+    
+      <input type="submit" value="Envoyer">
+    </form>
+  </div>
